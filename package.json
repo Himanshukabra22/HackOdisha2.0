@@ -1,0 +1,24 @@
+{
+  "name": "hackodisha2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Himanshukabra22/HackOdisha2.0.git"
+  },
+  "author": "Nooburcodes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Himanshukabra22/HackOdisha2.0/issues"
+  },
+  "homepage": "https://github.com/Himanshukabra22/HackOdisha2.0#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0",
+    "validator": "^13.7.0"
+  }
+}
