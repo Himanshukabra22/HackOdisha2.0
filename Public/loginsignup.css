@@ -1,9 +1,5 @@
-<<<<<<< HEAD:loginsignup.css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 body{
-=======
-body {
->>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -59,11 +55,7 @@ body {
     transition: 0.5s;
 }
 
-<<<<<<< HEAD:loginsignup.css
 .socials{
-=======
-.socials {
->>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
     margin: 30px auto;
     text-align: center;
     display: flex;
@@ -84,41 +76,34 @@ body {
 #img3 {
     flex-grow: 0.3;
 }
-<<<<<<< HEAD:loginsignup.css
 #img3{
     flex-grow: 0.3;
 }
 .socials img{
     width: 1px;
-=======
-
-.socials img {
-    width: 30px;
->>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
     margin: 0 12px;
     box-shadow: 0 0 20px 0 #7f7f7f3d;
     cursor: pointer;
     border-radius: 200%;
 }
-<<<<<<< HEAD:loginsignup.css
+
 #l1{
     color: grey;
     margin-top: 50%;
     position: relative;
     top: 5px;
 }
-#l1{
+#d1{
     color: grey;
-    margin-top: 50%;
+    width:  70%;
+    /* margin-top: 50%; */
+    margin: 0 0 0px 10px;
     position: relative;
+    margin-top: 10px;
     top: 2px;
 }
 .input-group{
-=======
-
-.input-group {
->>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
-    top: 180px;
+    top: 120px;
     position: absolute;
     width: 280px;
     transition: 0.5s;
@@ -142,25 +127,29 @@ body {
     cursor: pointer;
     display: block;
     margin: auto;
+    margin-top: 25px;
     background: linear-gradient(to right, #add455, #add455, #fff);
     border: 0;
     outline: none;
     border-radius: 30px;
 }
 
-.chech-box {
+.check-box {
     margin: 30px 10px 30px 0;
 }
 
 span {
     color: #777;
     font-size: 12px;
-    bottom: 68px;
+    /* margin-top:30px; */
+    margin: 30px 0;
+    /* bottom: 80px; */
     position: absolute;
 }
 
 #login {
     left: 50px;
+    margin-top: 50px;
 }
 
 #register {
