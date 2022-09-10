@@ -2,10 +2,12 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const hbs = require("hbs");
+const router = require("./routers/users");
 // const MensRanking = require("./models/mens"); // models
 // const router = require("./routers/men");  // routing
 const port = process.env.PORT || 3000;
 require("./db/conn"); // connection
+// require("./db/conn2"); // connection
 
 
 const static_path = path.join(__dirname,"../public");
@@ -19,7 +21,8 @@ app.set("views", template_path);
 hbs.registerPartials(partials_path);
 
 
-// app.use(express.json());
+app.use(express.json());
+app.use(router);
 
 
 app.get("/", async (req,res) =>{

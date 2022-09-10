@@ -66,12 +66,12 @@ body {
 
 #img1 {
     flex-grow: 0.3;
-    background-image: url("./Public/content/Google.png");
+    /* background-image: url("../Public/content/Google.png"); */
 }
 
-#img2 {
+/* #img2 {
     flex-grow: 0.3;
-}
+} */
 
 #img3 {
     flex-grow: 0.3;
