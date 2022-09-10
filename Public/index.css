@@ -130,12 +130,15 @@ h1 {
     align-items: center;
     vertical-align: middle;
 }
-.navbarul>a{
+
+.navbarul>a {
     color: transparent;
 }
-.navbarul>a:hover{
+
+.navbarul>a:hover {
     color: black;
 }
+
 .navbutton {
     margin: 0px 10px;
     padding: 16px 16px 13px 16px;
