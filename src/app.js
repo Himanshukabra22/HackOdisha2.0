@@ -29,6 +29,10 @@ app.get("/", async (req,res) =>{
 app.get("/eventpage", (req,res)=>{
     res.render("event");
   }); 
+
+app.get("/signup", (req,res)=>{
+    res.render("loginsignup");
+  }); 
 // app.get('/event', (req, res) => { res.sendFile(__dirname + '/event.html'); });
 
 // app.use(router);
