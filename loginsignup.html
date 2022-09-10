@@ -12,13 +12,8 @@
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
-            </div>
-            <div class="socials">
-                <img id="img1" src="/Public/Images/Facebook.png">
-                <img id="img2" src="/Public/Images/Google.png">
-                <img id="img3" src="/Public/Images/twitter.png"> 
+                <button type="button" class="toggle-btn" id="tb1" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" id="tb2" onclick="register()">Register</button>
             </div>
             <form id="login" class="input-group">
                 <input type="text" class="input-field" placeholder="User Id" required>
@@ -30,10 +25,22 @@
                 <input type="text" class="input-field" placeholder="User Id" required>
                 <input type="text" class="input-field" placeholder="Email Id" required>
                 <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Re-Enter Password" required>
+                <input type="text" class="input-field" placeholder="Enter Phone Number" required>
+                <label id="l1" for="dateOfBirth">D.O.B. : </label>
+                <input id="d1" type="date" name="dateOfBirth" required>
+                <br>
                 <input type="checkbox" class="chech-box"><span>I agree to the terms and condiitons.</span>
                 <button type="submit" class="submit-btn">Register</button>
             </form>
         </div>
+        <footer>
+            <div class="socials">
+                <img id="img1" src="/Public/Images/Facebook.png">
+                <img id="img2" src="/Public/Images/Google.png">
+                <img id="img3" src="/Public/Images/twitter.png"> 
+            </div>
+        </footer>
     </div>
     <script>
         var x = document.getElementById("login");
