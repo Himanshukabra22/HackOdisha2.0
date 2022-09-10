@@ -1,1 +1,5 @@
-this is simple text file
+Github repo link : https://github.com/Himanshukabra22/HackOdisha2.0.git
+This file includes UI details :
+Font color  - #ADD455
+font of login and register - HK Grotesk Bold
+font of user id and password - Open sans Light
