@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,24 @@
     <link rel="stylesheet" href="loginsignup.css">
     <title>SignIn / SignUp</title>
 </head>
+
 <body>
     <div class="first">
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" id="tb1" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" id="tb2" onclick="register()">Register</button>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="socials">
+                <img id="img1">
+                <img id="img2" src="../../Public/content/Google.png">
+                <img id="img3">
             </div>
             <form id="login" class="input-group">
                 <input type="text" class="input-field" placeholder="User Id" required>
                 <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
                 <button type="submit" class="submit-btn">Login</button>
             </form>
             <form id="register" class="input-group">
@@ -47,16 +54,17 @@
         var y = document.getElementById("register");
         var z = document.getElementById("btn");
 
-        function register(){
+        function register() {
             x.style.left = "-400px";
             y.style.left = "50px";
             z.style.left = "110px";
         }
-        function login(){
+        function login() {
             x.style.left = "50px";
             y.style.left = "450px";
             z.style.left = "0";
         }
     </script>
 </body>
+
 </html>

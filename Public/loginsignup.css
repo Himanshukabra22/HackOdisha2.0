@@ -1,36 +1,44 @@
+<<<<<<< HEAD:loginsignup.css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 body{
+=======
+body {
+>>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-.first{
+
+.first {
     height: 100%;
     width: 100%;
-    background-image: url(/Public/Images/Background_image.jpeg);
+    background-image: url("./content/Background_image.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: none;
     position: absolute;
 }
-.form-box{
+
+.form-box {
     width: 380px;
     height: 550px;
     position: relative;
     margin: 6% auto;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 50px;
     padding: 5px;
     overflow: hidden;
 }
-.button-box{
+
+.button-box {
     width: 220px;
     margin: 35px auto;
     position: relative;
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 30px;
 }
-.toggle-btn{
+
+.toggle-btn {
     padding: 10px 30px;
     cursor: pointer;
     background: transparent;
@@ -39,10 +47,11 @@ body{
     position: relative;
     font-family: style="font-family: 'Poppins', sans-serif;";
 }
-#btn{
+
+#btn {
     top: 0;
     left: 0%;
-    position:absolute;
+    position: absolute;
     width: 110px;
     height: 100%;
     background: linear-gradient(to right, #add455, #add455);
@@ -50,7 +59,11 @@ body{
     transition: 0.5s;
 }
 
+<<<<<<< HEAD:loginsignup.css
 .socials{
+=======
+.socials {
+>>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
     margin: 30px auto;
     text-align: center;
     display: flex;
@@ -58,22 +71,36 @@ body{
     justify-content: space-evenly;
     flex-grow: 1;
 }
-#img1{
+
+#img1 {
+    flex-grow: 0.3;
+    background-image: url("./Public/content/Google.png");
+}
+
+#img2 {
     flex-grow: 0.3;
 }
-#img2{
+
+#img3 {
     flex-grow: 0.3;
 }
+<<<<<<< HEAD:loginsignup.css
 #img3{
     flex-grow: 0.3;
 }
 .socials img{
     width: 1px;
+=======
+
+.socials img {
+    width: 30px;
+>>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
     margin: 0 12px;
     box-shadow: 0 0 20px 0 #7f7f7f3d;
     cursor: pointer;
     border-radius: 200%;
 }
+<<<<<<< HEAD:loginsignup.css
 #l1{
     color: grey;
     margin-top: 50%;
@@ -87,12 +114,17 @@ body{
     top: 2px;
 }
 .input-group{
+=======
+
+.input-group {
+>>>>>>> 57ec50965c47d5dcb0a5c72ee12cf7402ec1579a:Public/loginsignup.css
     top: 180px;
     position: absolute;
     width: 280px;
     transition: 0.5s;
 }
-.input-field{
+
+.input-field {
     width: 100%;
     padding: 10px 0;
     margin: 5px 0;
@@ -103,29 +135,34 @@ body{
     outline: none;
     background: transparent;
 }
-.submit-btn{
+
+.submit-btn {
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin:auto;
+    margin: auto;
     background: linear-gradient(to right, #add455, #add455, #fff);
     border: 0;
     outline: none;
     border-radius: 30px;
 }
-.chech-box{
+
+.chech-box {
     margin: 30px 10px 30px 0;
 }
-span{
+
+span {
     color: #777;
     font-size: 12px;
     bottom: 68px;
     position: absolute;
 }
-#login{
+
+#login {
     left: 50px;
 }
-#register{
+
+#register {
     left: 450px;
 }
