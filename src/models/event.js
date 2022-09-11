@@ -2,57 +2,49 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 
 const eventSchema =  new mongoose.Schema({
-    name:{
+    eventname:{
         type: String,
         required: true,
         unique:true,
         trim: true
     },
-    Dob:{
+    about:{
+        type: String,
+        required: true,
+        unique:true,
+        trim: true
+    },
+    date:{
         type: Date,
         required: true,
         trim: true
     },
-    email: {
+    time: {
         type:String,
         required: true,
-        unique: [true, "Email is already present"],
-        validate(value){
-            if (!validator.isEmail(value)) {
-                throw new error("Invalid Email")
-            }
-        }
-    },
-    contact:{
-        type: Number,
-        required: true,
         unique: true,
-        minlength: 10,
         trim: true
     },
-    address:{
+    location:{
         type: String,
-        unique:true,
         required: true,
         trim: true
     },
-    password:{
+    organiser:{
+        type: String,
+        required: true,
+        trim: true
+    },
+    poster:{
+       data: Buffer,
+       contentType: String
+    },
+    Ngocode:{
         type: Number,
         required: true,
         unique: true,
-        minlength: 4,
-        maxlength:10,
         trim: true
-    },
-    Confirmpassword:{
-        type: Number,
-        required: true,
-        unique: true,
-        minlength: 4,
-        maxlength:10,
-        trim: true
-    },
-   
+    },  
 });
 
 // Creating a new collection and passing the schema 

@@ -24,33 +24,29 @@ const userSchema =  new mongoose.Schema({
         }
     },
     contact:{
-        type: Number,
+        type: String,
         required: true,
-        unique: true,
         minlength: 10,
         trim: true
     },
     address:{
         type: String,
-        unique:true,
         required: true,
         trim: true
     },
     password:{
-        type: Number,
-        required: true,
-        unique: true,
-        minlength: 4,
-        maxlength:10,
-        trim: true
+        type: String,
+        required: true
+        // minlength: 4,
+        // maxlength:10,
+        // trim: true
     },
-    Confirmpassword:{
-        type: Number,
-        required: true,
-        unique: true,
-        minlength: 4,
-        maxlength:10,
-        trim: true
+    confirmpassword:{
+        type: String,
+        required: true
+        // minlength: 4,
+        // maxlength:10,
+        // trim: true
     },
    
 });

@@ -15,26 +15,27 @@
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                <button type="button" class="toggle-btn" onclick="register()" >Register</button>
             </div>
             <!-- <div class="socials">
                 <img id="img1">
                 <img id="img2" src="../../Public/content/Google.png">
                 <img id="img3">
             </div> -->
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
+            <form id="login" class="input-group" action="/login" method="POST">
+                <input type="text" class="input-field" placeholder="User Id" name="username" required>
+                <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
                 <button type="submit" class="submit-btn">Login</button>
             </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Email Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="text" class="input-field" placeholder="Re-Enter Password" required>
-                <input type="text" class="input-field" placeholder="Enter Phone Number" required>
-                <label id="l1" for="dateOfBirth">D.O.B. : </label>
+            <form id="register" class="input-group" action="/user" method="POST">
+                <input type="text" class="input-field" placeholder="User Id" name="username" required>
+                <input type="text" class="input-field" placeholder="Email Id" name="email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
+                <input type="text" class="input-field" placeholder="Re-Enter Password" name="confirmpassword" required>
+                <input type="text" class="input-field" placeholder="Enter Phone Number" name="contact" required>
+                <input type="text" class="input-field" placeholder="Enter Address" name="address" required>
+                <label id="l1" for="dateOfBirth">D.O.B. : </label> 
                 <input id="d1" type="date" name="dateOfBirth" required>
                 <br>
                 <input type="checkbox" class="check-box"><span>I agree to the terms and condiitons.</span>
@@ -45,7 +46,7 @@
             <div class="socials">
                 <img id="img1" src="/Public/Images/Facebook.png">
                 <img id="img2" src="/Public/Images/Google.png">
-                <img id="img3" src="/Public/Images/twitter.png"> 
+                <img id="img3" src="/Public/Images/twitter.png">
             </div>
         </footer> --}}
     </div>
