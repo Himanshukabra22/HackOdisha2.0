@@ -49,12 +49,13 @@ function lastevent() {
     }
 }
 function cardinfofun(p) {
-    let x = '<div id="eventinfocard"><div id="evnamediv"><span>' + eventname[p] + '</span></div><div id="descdiv"><span>' + eventdes[p] + '</span></div><div class="eventbtns" id="desdiv"><div><button class="navbutton eventnavbtns" title="share"><img src="content\\share.png" id="share"></button><button class="navbutton eventnavbtns" title="Participate"><a href ="https://docs.google.com/forms/d/e/1FAIpQLSfIyB-J_IkKHjObnIIQ9HQXx5JsCtfp79Qn7OZdWXxoRiTrng/viewform?usp=sf_link" target ="_blank"><img src="content\\participate.png" id="takepart"></a></button><button class="navbutton eventnavbtns" title="More" onclick="slide()"><img src="content\\more.png" id="more"></button> </div></div></div></div>'
-    return x
+    let x = `<div id="eventinfocard"><div id="evnamediv"><span>${eventname[p]}</span></div><div id="descdiv"><span>${eventdes[p]}</span></div><div class="eventbtns" id="desdiv"><div><button class="navbutton eventnavbtns" title="share"><img src="content\\share.png" id="share"></button><button class="navbutton eventnavbtns" title="Participate"><a href ="${partlinks[p]}" target ="_blank"><img src="content\\participate.png" id="takepart"></a></button><button class="navbutton eventnavbtns" title="More" onclick="slide()"><img src="content\\more.png" id="more"></button> </div></div></div></div>`
+    return x;
 }
 function info() {
     document.getElementById("eventinfo").innerHTML = cardinfofun(i)
 }
+
 function slide() {
     if (a % 2 == 0) {
         document.getElementById("notiposterid").style.cssText = "transition: 0.3s; width: 35rem;  ";
@@ -69,7 +70,8 @@ function slide() {
         document.getElementById("abouteventicon").style.cssText = "transition: 0.3s; transform: rotate(0deg)"
         document.getElementById("eventinfo").style.cssText = "transition: 0.5s; transition-delay: 0s; width:0rem; height:34rem; display: inline-block; float: right; background-color: transparent;"
         document.getElementById("notiposterid").style.backgroundImage = 'url("./content/event' + (i + 1) + '.jpg")'
-        document.getElementById("eventinfo").innerHTML = ""
+        // document.getElementById("eventinfo").innerHTML = ""
+        document.getElementById("eventinfo").style.display = "none";
         a--;
     }
     t = a
