@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="loginsignup.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../Public/loginsignup.css">
+    <link rel="stylesheet" href="../../Public/index.css">
     <title>SignIn / SignUp</title>
 </head>
 
 <body>
-    <div class="first">
+    <div class="main">
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()" >Register</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
             </div>
             <!-- <div class="socials">
                 <img id="img1">
@@ -36,34 +38,15 @@
                 <input type="text" class="input-field" placeholder="Re-Enter Password" name="confirmpassword" required>
                 <input type="text" class="input-field" placeholder="Enter Phone Number" name="contact" required>
                 <input type="text" class="input-field" placeholder="Enter Address" name="address" required>
-                <label id="l1" for="dateOfBirth">D.O.B. : </label> 
+                <label id="l1" for="dateOfBirth">D.O.B. : </label>
                 <input id="d1" type="date" name="dateOfBirth" required>
                 <br>
                 <input type="checkbox" class="check-box"><span>I agree to the terms and condiitons.</span>
                 <button type="submit" class="submit-btn">Register</button>
             </form>
         </div>
-    <footer class="base">
-        <div>
-            <span>Created by team NOOBERCODES for the purpose of</span>
-            <a href="https://hackodisha2022.tech/" target="_blank">
-                <img src="/content/HOlogo.png" title="HackOdisha2.0" alt="HOlogo">
-            </a>
-            <div class="eventbtns" id="basebtns">
-                <div>
-                    <button class="navbutton eventnavbtns" title="linkedin"><a
-                            href="https://www.linkedin.com/company/dsc-iiitsurat/"><img src="content\linkedin.png"
-                                id="takepart"></a></button>
-                    <button class="navbutton eventnavbtns" title="Instagram"><a
-                            href="https://instagram.com/gdsc_iiitsurat?igshid=YmMyMTA2M2Y="><img
-                                src="content\instagram.png" id="share"></a></button>
-                    <button class="navbutton eventnavbtns" title="IIIT Surat"><a href="http://www.iiitsurat.ac.in/"><img
-                                src="content\surat.png" id="more"></a></button>
-                </div>
-            </div>
-        </div>
-    </footer>
     </div>
+
     <script>
         var x = document.getElementById("login");
         var y = document.getElementById("register");
@@ -80,6 +63,9 @@
             z.style.left = "0";
         }
     </script>
+    <footer class="base">
+ 
+</footer>
 </body>
 
 </html>

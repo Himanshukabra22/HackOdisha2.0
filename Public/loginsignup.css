@@ -14,6 +14,7 @@ body{
 .first {
     height: 100vh;
     width: 100vw;
+    display: inline-block;
 }
 
 .form-box {
@@ -128,8 +129,8 @@ body{
     cursor: pointer;
     display: block;
     margin: auto;
-    margin-top: 25px;
-    background: linear-gradient(to right, #add455, #add455, #fff);
+    margin-top: -5px;
+    background: linear-gradient(to right, #add455, #add455);
     border: 0;
     outline: none;
     border-radius: 30px;
@@ -155,4 +156,5 @@ span {
 
 #register {
     left: 450px;
+    margin-top: -16px;
 }

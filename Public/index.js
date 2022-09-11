@@ -70,8 +70,8 @@ function slide() {
         document.getElementById("abouteventicon").style.cssText = "transition: 0.3s; transform: rotate(0deg)"
         document.getElementById("eventinfo").style.cssText = "transition: 0.5s; transition-delay: 0s; width:0rem; height:34rem; display: inline-block; float: right; background-color: transparent;"
         document.getElementById("notiposterid").style.backgroundImage = 'url("./content/event' + (i + 1) + '.jpg")'
-        // document.getElementById("eventinfo").innerHTML = ""
-        document.getElementById("eventinfo").style.display = "none";
+        document.getElementById("eventinfo").innerHTML = ""
+        // document.getElementById("eventinfo").style.display = "none";
         a--;
     }
     t = a
