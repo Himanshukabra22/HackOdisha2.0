@@ -278,33 +278,33 @@ h1 {
 
 .base {
     height: 16rem;
-    background-color: black;
+    background-color: rgb(46, 46, 46);
     position: static;
     width: 100vw;
     display: flex;
 }
 
-.base>div {
+/* .base>div {
     width: fit-content;
     margin: 0px auto;
     align-items: center;
-}
+} */
 
-.base>div>a>img {
+/* .base>div>a>img {
     display: block;
     height: 5rem;
     width: auto;
     margin: auto;
     margin-top: 0.5rem;
     align-items: center;
-}
+} */
 
-.base>div>a>img:hover {
+/* .base>div>a>img:hover {
     margin-top: 0.2rem;
     padding-bottom: 0.3rem;
-}
+} */
 
-.base>div>span {
+/* .base>div>span {
     display: block;
     width: auto;
     color: rgb(200, 200, 200);
@@ -313,7 +313,7 @@ h1 {
     font-weight: 600;
     margin: 0.7rem 0 0 0;
     align-items: center;
-}
+} */
 
 #eventlogo {
     height: 34rem;
