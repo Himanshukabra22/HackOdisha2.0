@@ -46,6 +46,10 @@ app.get("/login", (req,res)=>{
     res.render("loginsignup");
   }); 
 
+app.get("/addevent", (req,res)=>{
+    res.render("addevent");
+  }); 
+
   app.post("/user", async (req,res) =>{
     try {
     //    const addingUsersRecord = new UsersData(req.body);
@@ -80,7 +84,7 @@ app.get("/login", (req,res)=>{
         }
         create()
 
-      res.status(201).render("index"); 
+      res.status(201).render("event"); 
       // res.send("hi");
     }else{
       res.send("Passwords are not matching");
